@@ -15,4 +15,9 @@ class Thermostat{
   const thermos = new Thermostat(76); // Setting in Fahrenheit scale
   let temp = thermos.temperature;
   console.log(temp);
+
+  // Getting celsius temperature 
+  thermos.temperature = 32; 
+  temp = thermos.temperature; 
+  console.log(thermos);
   
