@@ -21,3 +21,9 @@ class Thermostat{
   temp = thermos.temperature; 
   console.log(thermos);
   
+  
+// finding random number between passed numbers
+  function randomRange(myMin, myMax) {
+  return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin
+}
+console.log(randomRange(-787, 1780));
