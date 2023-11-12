@@ -36,3 +36,11 @@ function ascendingOrder(arr) {
     });
   }
   console.log(ascendingOrder([1, 5, 2, 3, 4]));
+
+// setting letters in right alphabetical order
+function alphabeticalOrder(arr) {
+  return arr.sort(function(a, b) {
+  return a === b ? 0 : a > b ? 1 : -1;
+  });
+}
+  console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
