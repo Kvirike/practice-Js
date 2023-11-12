@@ -27,3 +27,12 @@ class Thermostat{
   return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin
 }
 console.log(randomRange(-787, 1780));
+
+
+// sorting numbers in array (from lowest to highest)
+function ascendingOrder(arr) {
+    return arr.sort(function(a, b) {
+      return a - b;
+    });
+  }
+  console.log(ascendingOrder([1, 5, 2, 3, 4]));
