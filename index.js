@@ -44,3 +44,15 @@ function alphabeticalOrder(arr) {
   });
 }
   console.log(alphabeticalOrder(["a", "d", "c", "a", "z", "g"]));
+
+  // finding sum of the numbers (between passed numbers and including)
+  function sumAll(arr) {
+    let max= Math.max(arr[0, 1])
+    let min = Math.min(arr[0], arr[1])
+    let sums = 0;
+    for(let i = min; i<= max; i++){
+      sums += i;
+    }
+    return sums
+    }
+    console.log(sumAll([1, 412]));
