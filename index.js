@@ -83,3 +83,15 @@ groupedPeople[age].push(person)
   return groupedPeople
 },{})
 console.log(result);
+
+// finding index of the place for passed number
+function getIndexToIns(arr, num) {
+    arr.sort((a, b)=> (a-b))
+    for(let i = 0; i < arr.length; i++){
+        if(arr[i] >= num){
+            return i
+        }
+    }
+    return arr.length
+}
+  console.log(getIndexToIns([40, 76, 35, 60], 150));
