@@ -56,3 +56,15 @@ function alphabeticalOrder(arr) {
     return sums
     }
     console.log(sumAll([1, 412]));
+
+// sum of prices of the items in cart 
+const toBuy = [
+    { name: 'Cucumber', price: 4 },
+    { name: 'Potatoe', price: 2 },
+    { name: 'Bread', price: 3 }
+  ];
+  
+  const usersObj = toBuy.reduce((total, items) => {
+    return total + items.price
+  }, 0);
+  console.log(usersObj);
