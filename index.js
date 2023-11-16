@@ -95,3 +95,9 @@ function getIndexToIns(arr, num) {
     return arr.length
 }
   console.log(getIndexToIns([40, 76, 35, 60], 150));
+
+// checking for boolean
+  function booWho(bool) {
+    return typeof(bool) == "boolean" ? true : false
+  }
+  console.log(booWho(true));
