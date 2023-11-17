@@ -57,6 +57,14 @@ function alphabeticalOrder(arr) {
     }
     console.log(sumAll([1, 412]));
 
+  // sum of numbers in array
+  let arr = [1, 2, 3, 4];
+  let sum = arr.reduce((total, item) => {
+    console.log(total, item);
+    return total + total
+  }, 0)
+  /console.log(sum);
+
 // sum of prices of the items in cart 
 const toBuy = [
     { name: 'Cucumber', price: 4 },
