@@ -109,3 +109,13 @@ function booWho(bool) {
   return typeof bool === "boolean";
 }
 console.log(booWho(true));
+
+// string in reverse
+function reverseString(str) {
+    let reversedStr = "";
+   for (let i = str.length - 1; i >= 0; i--) {
+     reversedStr += str[i];
+   }
+   return reversedStr;
+ }
+ console.log(reverseString("Hello World"));
