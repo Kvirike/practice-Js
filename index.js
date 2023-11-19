@@ -63,7 +63,7 @@ function alphabeticalOrder(arr) {
     console.log(total, item);
     return total + total
   }, 0)
-  /console.log(sum);
+  console.log(sum);
 
 // sum of prices of the items in cart 
 const toBuy = [
@@ -119,3 +119,18 @@ function reverseString(str) {
    return reversedStr;
  }
  console.log(reverseString("Hello World"));
+
+
+ // finding the length of the longest word in string
+ function findLongestWordLength(str) {
+    let words = str.split(' ');
+    console.log(words);
+    let maxLength = 0;
+  for (let i = 0; i < words.length; i++) {
+    if (words[i].length > maxLength) {
+      maxLength = words[i].length;
+    }
+  }
+  return maxLength;
+}
+  console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
