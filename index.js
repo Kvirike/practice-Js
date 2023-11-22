@@ -87,6 +87,14 @@ const toBuy = [
   }, 0);
   console.log(usersObj);
 
+// finding greater or equal
+function findGreaterOrEqual(a, b) {
+  return (a === b) ? "a and b are equal" 
+    : (a > b) ? "a is greater" 
+    : "b is greater";
+}
+console.log(findGreaterOrEqual(12, 34));
+
 // grouping people by their age
 const people = [
   { name: "kyle", age: 26},
