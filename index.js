@@ -59,11 +59,21 @@ function alphabeticalOrder(arr) {
 
   // sum of numbers in array
   let arr = [1, 2, 3, 4];
-  let sum = arr.reduce((total, item) => {
+  let sums = arr.reduce((total, item) => {
     console.log(total, item);
     return total + total
   }, 0)
-  console.log(sum);
+  console.log(sums);
+
+  //finding sum of numbers with rest operator
+  const sum = (...args) => {
+  let total = 0;
+  for (let i = 0; i < args.length; i++) {
+    total += args[i];
+  }
+  return total;
+}
+console.log(sum(1, 2, 5));
 
 // sum of prices of the items in cart 
 const toBuy = [
