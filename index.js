@@ -78,16 +78,10 @@ console.log(sum(1, 2, 5));
 
 // returning first number from array, which returns true for passed function
  function findElement(arr, func) {
-    let num = 0
-    for(let i = 0; i < arr.length; i++){
-        num = arr[i]
-        if(func(num)){
-            return num
-        }
-    }
-    return undefined;
+    return arr.find(func)
   }
   console.log(findElement([1, 3, 4, 7], num => num % 2 === 0));
+
 
 // sum of prices of the items in cart 
 const toBuy = [
