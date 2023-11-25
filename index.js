@@ -160,3 +160,15 @@ function reverseString(str) {
   return maxLength;
 }
   console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
+
+  //returning all numbers in array from 1 to passed one
+  function countup(n) {
+  if (n < 1) {
+    return []
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+  }
+}
+console.log(countup(4));
