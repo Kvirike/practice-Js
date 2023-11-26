@@ -192,3 +192,13 @@ function frankenSplice(arr1, arr2, n) {
     return arr
   }
   console.log(frankenSplice([1, 2, 3], [4, 5, 6], 2));
+
+// returning without falsy elements
+  function bouncer(arr) {
+    let filteredArr = [];
+    for(let i = 0; i< arr.length; i++){
+        if(arr[i])  filteredArr.push(arr[i])
+    }
+    return filteredArr
+  }
+  console.log(bouncer([7, "ate", "", false, 9]));
