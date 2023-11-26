@@ -184,3 +184,11 @@ function reverseString(str) {
   }
 }
 console.log(countup(4));
+
+// merging two arrays on the passed index
+function frankenSplice(arr1, arr2, n) {
+    let arr = arr2.slice()
+    arr.splice(n, 0, ...arr1);
+    return arr
+  }
+  console.log(frankenSplice([1, 2, 3], [4, 5, 6], 2));
