@@ -65,6 +65,18 @@ function alphabeticalOrder(arr) {
   }, 0)
   console.log(sums);
 
+  // multiplying every number on the next one
+  function multiply(arr, n) {
+    if (n <= 0) {
+      return 1;
+    } else {
+      return multiply(arr, n - 1) * arr[n - 1];
+    }
+  }
+  let array = [1, 2, 3, 4, 5]
+  console.log(multiply(array, 5));
+
+
   //finding sum of numbers with rest operator
   const sum = (...args) => {
   let total = 0;
