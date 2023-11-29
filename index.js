@@ -61,7 +61,7 @@ function alphabeticalOrder(arr) {
   let arr = [1, 2, 3, 4];
   let sums = arr.reduce((total, item) => {
     console.log(total, item);
-    return total + total
+    return total + item
   }, 0)
   console.log(sums);
 
