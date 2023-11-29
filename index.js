@@ -65,6 +65,17 @@ function alphabeticalOrder(arr) {
   }, 0)
   console.log(sums);
 
+  // finding sum of numbers (recursion)
+  function sum(arr, n) {
+    if(n <= 0) {
+      return 0;
+    } else {
+      return sum(arr, n - 1) + arr[n - 1];
+    }
+  }
+  let test = [1, 2, 3, 4, 5]
+  console.log(sum(test, 5));
+  
   // multiplying every number on the next one
   function multiply(arr, n) {
     if (n <= 0) {
