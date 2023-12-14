@@ -65,6 +65,19 @@ function alphabeticalOrder(arr) {
   }, 0)
   console.log(sums);
 
+  // placing numbers in array from lower to biggest (removing similar ones)
+  var removeDuplicates = function(nums) {
+    nums.sort((a, b) => a - b);
+    for(var i=1; i<nums.length; i++){
+        if(nums[i] === nums[i-1]){
+            nums.splice(i, 1);
+           i--
+        }
+    }
+    return nums
+  };
+  console.log(removeDuplicates([1, 2, 3, 3, 3, 3, 56, 323, 56, 23, 1, 4, 2]));
+
   // finding sum of numbers (recursion)
   function sum(arr, n) {
     if(n <= 0) {
