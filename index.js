@@ -100,6 +100,22 @@ function alphabeticalOrder(arr) {
   let array = [1, 2, 3, 4, 5]
   console.log(multiply(array, 5));
 
+  var majorityElement = function(nums) {
+    nums.sort((a, b) => a - b);
+    if(nums.length === 1) return nums[0];
+    for(var i=1, o=1; i<nums.length; i++){
+        if(nums[i] === nums[i-1]){
+            o++;
+        }else{
+            o=1;
+        }
+        if(o > nums.length/2){
+            return nums[i];
+        }
+    }
+  };
+  console.log(majorityElement([1, 2, 3, 3, 3, 3, 56, 323, 56, 23, 1, 4, 2]));
+
 
   //finding sum of numbers with rest operator
   const sum = (...args) => {
