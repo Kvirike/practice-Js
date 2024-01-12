@@ -362,3 +362,14 @@ function frankenSplice(arr1, arr2, n) {
   
   console.log(cc(2)); cc(3); cc(7); cc('K'); cc('A');
   console.log(cc('A'));
+
+
+ //array of numbers that are doubles of the first array
+  function doubleNumbers(arr) {
+    return arr.map(function(number) {
+      return number * 2;
+    });
+  }
+  
+  console.log(doubleNumbers([2, 5, 100]));
+  
