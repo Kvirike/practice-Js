@@ -372,4 +372,14 @@ function frankenSplice(arr1, arr2, n) {
   }
   
   console.log(doubleNumbers([2, 5, 100]));
+
+// making strings from array of numbers
+  function stringItUp(arr) {
+    return arr.map(function(number) {
+      return String(number);
+    });
+  }
+  
+  console.log(stringItUp([2, 5, 100]));
+  
   
