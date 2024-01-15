@@ -118,14 +118,14 @@ function alphabeticalOrder(arr) {
 
 
   //finding sum of numbers with rest operator
-  const sum = (...args) => {
-  let total = 0;
-  for (let i = 0; i < args.length; i++) {
-    total += args[i];
-  }
-  return total;
-}
-console.log(sum(1, 2, 5));
+//   const sum = (...args) => {
+//   let total = 0;
+//   for (let i = 0; i < args.length; i++) {
+//     total += args[i];
+//   }
+//   return total;
+// }
+// console.log(sum(1, 2, 5));
 
 // multiplying all numbers from nested arrays
 function multiplyAll(arr) {
@@ -381,5 +381,14 @@ function frankenSplice(arr1, arr2, n) {
   }
   
   console.log(stringItUp([2, 5, 100]));
+
+
+  // capitalizing each of the array items
+  function capitalizeNames(arr) {
+    return arr.map(name => name[0].toUpperCase() + name.slice(1).toLowerCase());
+  }
+  
+  console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
+  
   
   
