@@ -390,5 +390,10 @@ function frankenSplice(arr1, arr2, n) {
   
   console.log(capitalizeNames(["john", "JACOB", "jinGleHeimer", "schmidt"]));
   
+  // array to string
+  function stringItUp(arr) {
+    return arr.map(number => String(number));
+  }
   
+  console.log(stringItUp([2, 5, 100]));
   
