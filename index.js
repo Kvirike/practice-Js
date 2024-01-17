@@ -396,4 +396,21 @@ function frankenSplice(arr1, arr2, n) {
   }
   
   console.log(stringItUp([2, 5, 100]));
+
+  // separating negatives from other numebrs
+  let nums = [1, 2, 3, 6, -7, 8, 9, -10, -14, 540]
+
+  function returningNegative(arr){
+    let negatives = [];
+    let others = [];
+    for(let i = 0; i < arr.length; i++){
+      if(arr[i] < 0){
+        negatives.push(arr[i])
+      }else{
+        others.push(i)
+      }
+    }
+    return {negatives, others}
+  }
+  console.log(returningNegative(nums));
   
