@@ -263,6 +263,13 @@ console.log(updateRecords(recordCollection, 5439, 'artist', 'ABBA'));
 }
   console.log(findLongestWordLength("The quick brown fox jumped over the lazy dog"));
 
+  // returning even numbers
+  function evensOnly(arr) {
+    return arr.filter(num => num % 2 === 0);
+  }
+  
+  console.log(evensOnly([3, 6, 8, 2]));
+  
   //returning all numbers in array from 1 to passed one
   function countup(n) {
   if (n < 1) {
