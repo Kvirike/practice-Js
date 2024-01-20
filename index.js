@@ -421,3 +421,22 @@ function frankenSplice(arr1, arr2, n) {
   }
   console.log(returningNegative(nums));
   
+
+  // returning only prime numbers
+  let numb = [1, 2, 5, 5, 6, 11, 19];
+
+  function onlyPrimes(arr) {
+    return arr.filter(num => {
+      if (num < 2) {
+        return false;
+      }
+      for (let i = 2; i < num; i++) {
+        if (num % i === 0) {
+          return false;
+        }
+      }
+      return true;
+    });
+  }
+
+  console.log(onlyPrimes(numb));
