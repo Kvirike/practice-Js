@@ -337,7 +337,17 @@ function frankenSplice(arr1, arr2, n) {
   }
   var data = lookUpProfile("Akira", "likes");
   console.log(data);
-
+// filtering people who are older than 18
+function ofAge(arr) {
+  return arr.filter(person => person.age >= 18);
+}
+console.log(ofAge([
+    { name: "Angelina Jolie", age: 80 },
+    { name: "Eric Jones", age: 2 },
+    { name: "Paris Hilton", age: 5 },
+    { name: "Kayne West", age: 16 },
+    { name: "Bob Ziroll", age: 100 }
+]));
 
   //blackjack strategy
   let count = 0;
@@ -440,3 +450,20 @@ function frankenSplice(arr1, arr2, n) {
   }
 
   console.log(onlyPrimes(numb));
+
+  // assigning eacah word the number according to its quantity in the sentence
+  function wordCount(sentence) {
+    const words = sentence.split(' ');
+  
+    const wordCountObject = words.reduce((acc, word) => {
+      const lowercaseWord = word.toLowerCase();
+      console.log( acc);
+  
+      acc[lowercaseWord] = (acc[lowercaseWord] || 0) + 1;
+      return acc;
+    }, {});
+    return wordCountObject;
+  }
+  const sentence = "This is a sample sentence. Another sentence with sentence 'sample' word.";
+  const results = wordCount(sentence);
+  console.log(result);
