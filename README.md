@@ -1,1 +1,2 @@
 # practice-Js
+Is a project in which interesting Javascript concepts and methods are collected. You can see the whole range of array and object manipulations and mutations here, which is accomplished with Js ES7 and ES6 features. This project is updatable and will be modified according to personal prefference
